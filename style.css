@@ -1,0 +1,2631 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: 'LibreBaskerville' ;
+    src: url("fonts/LibreBaskerville-Regular.woff");
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Bold.woff");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat-VariableFont_wght.woff");
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'LibreBaskerville';
+}
+
+
+
+
+header{
+    background-color: #262f499f;
+    background-image: url("images/weeding-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 800px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2.3rem;
+}
+
+header .nav .weblogo{
+    align-content: center;
+}
+
+header .nav .hyperlinks{
+    width: 40%;
+    align-content: center;
+}
+
+header .nav .hyperlinks ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .nav .hyperlinks ul li{
+    list-style-type: none;
+}
+
+header .nav .hyperlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+header .nav .hyperlinks ul li a:hover{
+    color: rgb(255, 67, 98);
+    transition: 150ms ease;
+}
+
+
+header .hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 550px;
+}
+
+header .hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+header .section1{
+    margin-bottom: 30px;
+}
+
+header .section2{
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+header .section3{
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+header .section4{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+.company{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 30px;
+}
+
+.company .kompany1{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 500px;
+    grid-template-areas:
+    'a b';
+    height: 700px;
+}
+
+.company .kompany1 .image{
+    grid-area: a;
+    background-image: url("images/pic12-free-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.company .kompany1 .fix{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+.company .kompany1 .fix .text-small{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.company .kompany1 .fix .text-large{
+    font-size: 3rem;
+    width: 100%;
+    font-weight: 600;
+}
+
+.company .kompany1 .fix .text-text{
+    margin: 25px 0px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.company .kompany1 .fix .text-button button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+.company .kompany1 .fix .text-button button:hover{
+    border: 2px solid rgb(255, 103, 128); 
+    background-color: rgb(255, 67, 98);
+    color: white;
+    transition: 150ms ease;
+}
+
+.company .kompany3{
+    display: grid;
+    gap: 30px;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: 200px;
+    grid-template-areas:
+    'd e f';
+    height: 400px;
+}
+
+.company .kompany3 .rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company .kompany3 .sentence{
+    width: 80%;
+    color: rgb(37, 45, 65);
+}
+
+.company .kompany3 .sentence .big{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.company .kompany3 .sentence .tiny{
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+.mountain{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-image:  url("images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mountain .mount{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 400px;
+    justify-content: center;
+    color: white;
+}
+
+.mountain .mount .rock1{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.mountain .mount .rock2{
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.mountain .mount .rock3{
+    width: 45%;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 30px 0px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.mountain .mount .rock4{
+    font-size: 25px;
+    color: rgb(255, 103, 128);
+}
+
+.mountain .mount .rock5{
+    margin: 25px 0px;
+    font-size: 17px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.mountain .mount .rock6 ul{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.mountain .mount .rock6 ul li{
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.mountain .mount .rock6 ul li a i{
+    width: 60%;
+    text-align: center;
+}
+
+.mountain .mount .rock6 ul li a{
+    color: rgb(255, 103, 128);
+    padding: 9px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.mountain .mount .rock6 ul li a:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+
+
+
+
+
+
+
+.lucky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 30px;
+}
+
+.lucky .luck{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns: 400px 300px 550px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    'a b d'
+    'a c d';
+    width: 80%;
+    height: 650px;
+    color: rgb(37, 45, 65);
+}
+
+.lucky .luck .up1{
+    grid-area: a;
+    background-image: url("images/pic14-free-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lucky .luck .up2{
+    grid-area: b;
+    background-image: url("images/pic04-free-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lucky .luck .up3{
+    grid-area: c;
+    background-image: url("images/pic02-free-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+.lucky .luck .up4 .down4 button:hover{
+    border: 2px solid rgb(255, 103, 128); 
+    background-color: rgb(255, 67, 98);
+    color: white;
+    transition: 150ms ease;
+}
+
+
+
+
+
+
+
+
+
+
+.beautiful{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    background-image: url("images/pic16.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #262f499f;
+    margin-bottom: 30px;
+}
+
+.beautiful .book{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.beautiful .book .beauty-crown{
+    margin-bottom: 30px;
+}
+
+.beautiful .book .beauty-small{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.beautiful .book .beauty-large{
+    margin: 25px;
+    font-size: 8rem;
+}
+
+.beautiful .book .beauty-medium{
+    font-size: 2rem;
+    color: rgb(255, 103, 128);
+}
+
+.beautiful .book .beauty-button{
+    margin: 45px 0px;
+}
+
+.beautiful .book .beauty-button button{
+    padding: 15px 50px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    background: none;
+    border: 2px solid white;
+    color: white;
+}
+
+.beautiful .book .beauty-button button:hover{
+    transition: 150ms ease;
+    color: rgb(37, 45, 65);
+    background-color: white;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+.couple{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    padding: 50px 100px;
+    margin-bottom: 30px;
+    background-color: rgb(246, 246, 246);
+}
+
+.couple .comment-image{
+    display: flex;
+    justify-content: center;
+}
+
+.couple .comment-text{
+    width: 60%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: 45px;
+    text-align: center;
+}
+
+.couple .comment-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 103, 128);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.midway{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1100px;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 30px;
+}
+
+.midway .text{
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(37, 45, 65);
+}
+
+.midway .text .text-small{
+    font-size: 20px;
+}
+
+.midway .text .text-large{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 15px 0px 45px 0px;
+}
+
+.midway .mid{
+    display: grid;
+    width: 95%;
+    height: 700px;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns:  repeat(3, 400px);
+    grid-template-rows: repeat(2, 350px);
+    grid-template-areas:
+    'a b c'
+    'd e f';
+}
+
+.midway .mid .image1{
+    grid-area: a;
+    background-image: url("images/pic60-free-img-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.midway .mid .image2{
+        grid-area: b;
+        background-image: url("images/pic64-free-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.midway .mid .image3{
+    grid-area: c;
+    background-image: url("images/pic59-free-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.midway .mid .image4{
+    grid-area: d;
+    background-image: url("images/pic62-free-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.midway .mid .image5{
+    grid-area: e;
+    background-image: url("images/pic63-free-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.midway .mid .image6{
+    grid-area: f;
+    background-image: url("images/pic61-free-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+.foundation{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.foundation .lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 750px;
+    background-color: rgb(255, 67, 98);
+    color: white;
+    /* padding: 50px; */
+}
+
+.foundation .lower .point1{
+    margin: 20px;
+}
+
+.foundation .lower .point2{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.foundation .lower .point3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin: 30px;
+}
+
+.foundation .lower .point4{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+    width: 80%;
+}
+
+.foundation .lower .point5{
+    margin-top: 40px;
+    width: 35%;
+}
+
+.foundation .lower .point5 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foundation .lower .point5 ul li{
+    list-style-type: none;
+}
+
+.foundation .lower .point5 ul li i{
+    font-size: 18px;
+    color: rgb(255, 103, 128);
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.foundation .lower .point5 ul li i:hover{
+    color: rgb(255, 67, 98);
+    transition: 150ms ease;
+}
+
+
+
+
+.foundation .lowest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 750px;
+    background-color: white;
+    /* padding: 50px; */
+}
+
+.foundation .lowest .point6{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.foundation .lowest .point7{
+    margin: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+    width: 70%;
+}
+
+.foundation .lowest .point8{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.foundation .lowest .point8 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 90%;
+    
+}
+
+.foundation .lowest .point8 form input{
+    padding: 10px;
+    width: 90%;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.foundation .lowest .point8 form textarea{
+    padding: 10px;
+    width: 90%;
+    height: 130px;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(246, 246, 246);
+    border: 1px solid rgb(219, 219, 219);
+
+}
+
+.foundation .lowest .point8 button{
+    padding: 15px 50px;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    background-color: white;
+    border: 2px solid rgb(255, 67, 98);
+}
+
+.foundation .lowest .point8 button:hover{
+    transition: 150ms ease;
+    color: white;
+    background-color: rgb(255, 67, 98);
+    border: 2px solid rgb(255, 67, 98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(37, 45, 65);
+    width: 100%;
+    height: auto;
+}
+
+footer .bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1270px) and (max-width:1320px){
+    
+.lucky{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 30px;
+}
+
+.lucky .luck{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    grid-template-columns: 400px 300px 500px;
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: 
+    'a b d'
+    'a c d';
+    width: 90%;
+    height: 650px;
+    color: rgb(37, 45, 65);
+}
+}
+
+
+@media (1175px < width < 1270px) {
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        'a b d'
+        'a c d';
+        width: 98%;
+        height: 650px;
+        color: rgb(37, 45, 65);
+    }
+
+    .midway .mid{
+        width: 95%;
+        height: 700px;
+        grid-template-columns:  repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        'a b c'
+        'd e f';
+    }
+
+    
+.mountain{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    background-image:  url("images/hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mountain .mount{
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    height: 400px;
+    justify-content: center;
+    color: white;
+}
+}
+
+
+@media (1124px < width < 1175px){
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        'a b d'
+        'a c d';
+        width: 98%;
+        height: 650px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2.3rem;
+    }
+    
+    header .nav .weblogo{
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks{
+        width: 50%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .midway .mid{
+        width: 95%;
+        height: 690px;
+        grid-template-columns:  repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        'a b c'
+        'd e f';
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    }
+
+    .company .kompany1{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px;
+        grid-template-areas:
+        'a b';
+        height: 700px;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        grid-template-areas:
+        'd e f';
+        height: 300px;
+    }
+    
+    
+    .couple .comment-text{
+        width: 70%;
+    }
+    
+
+
+    
+
+
+
+@media (min-width:900px) and (max-width:1124px) {
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        'a b d'
+        'a c d';
+        width: 98%;
+        height: 650px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 2.3rem;
+    }
+    
+    header .nav .weblogo{
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks{
+        width: 60%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .section3{
+        font-size: 7.5rem;
+        font-weight: bold;
+        margin: 25px;
+        letter-spacing: 3px;
+    }
+
+    .midway .mid{
+        width: 95%;
+        height: 695px;
+        grid-template-columns:  repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        'a b c'
+        'd e f';
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    .mountain .mount .rock3{
+        width: 75%;
+    }
+
+    .company .kompany1{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px;
+        grid-template-areas:
+        'a b';
+        height: 700px;
+    }
+
+    .company .kompany1 .fix{
+        padding-left: 70px;
+    }
+
+    .company .kompany1 .fix .text-text{
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        grid-template-areas:
+        'd e f';
+        height: 300px;
+    }
+
+    .company .kompany3 .sentence{
+        width: 85%;
+    }
+
+    .foundation .lowest .point6{
+        width: 90%;
+    }
+
+    
+.couple{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    padding: 50px 100px;
+    margin-bottom: 30px;
+    background-color: rgb(246, 246, 246);
+}
+
+.couple .comment-image{
+    display: flex;
+    justify-content: center;
+}
+
+.couple .comment-text{
+    width: 80%;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    line-height: 45px;
+    text-align: center;
+}
+
+.couple .comment-name{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 103, 128);
+    text-align: center;
+}
+
+
+
+.beautiful{
+    width: 100%;
+    height: 900px;
+}
+
+.beautiful .book{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.beautiful .book .beauty-small{
+    font-size: 18px;
+}
+
+.beautiful .book .beauty-large{
+    font-size: 7.8rem;
+}
+
+.beautiful .book .beauty-medium{
+    font-size: 1.9rem;
+}
+
+
+.beautiful .book .beauty-button button{
+    padding: 15px 50px;
+    font-size: 14px;
+}
+
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .bottom{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding: 2rem 5rem;
+    }
+    
+    }
+
+
+@media (min-width:768px) and (max-width:900px) {
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 800px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        'a b d'
+        'a c d';
+        width: 98%;
+        height: 650px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 2.3rem;
+        height: 150px;
+    }
+    
+    header .nav .weblogo{
+        align-content: center;
+        width: 90%;
+    }
+    
+    header .nav .hyperlinks{
+        width: 100%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .section3{
+        font-size: 7rem;
+        font-weight: bold;
+        margin: 23px;
+        letter-spacing: 2px;
+    }
+
+    .midway .mid{
+        width: 95%;
+        height: 650px;
+        grid-template-columns:  repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        'a b c'
+        'd e f';
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    .mountain .mount .rock3{
+        width: 75%;
+    }
+
+    .company .kompany1{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 500px;
+        grid-template-areas:
+        'a b';
+        height: 700px;
+    }
+
+    .company .kompany1 .fix{
+        padding-left: 60px;
+    }
+
+    .company .kompany1 .fix .text-text{
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 30px;
+        justify-content: center;
+        align-content: center;
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 200px;
+        grid-template-areas:
+        'd e f';
+        height: 300px;
+    }
+
+    .company .kompany3 .sentence{
+        width: 87%;
+    }
+
+
+    .company .kompany3 .sentence .big{
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+    
+    .company .kompany3 .sentence .tiny{
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+ 
+    .couple{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 550px;
+        padding: 40px 50px;
+        margin-bottom: 30px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .couple .comment-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .couple .comment-text{
+        width: 85%;
+        font-size: 28px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        line-height: 45px;
+        text-align: center;
+    }
+    
+    .couple .comment-name{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(255, 103, 128);
+        text-align: center;
+    }
+
+    
+.beautiful{
+    width: 100%;
+    height: 900px;
+}
+
+.beautiful .book{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.beautiful .book .beauty-small{
+    font-size: 18px;
+}
+
+.beautiful .book .beauty-large{
+    font-size: 7rem;
+}
+
+.beautiful .book .beauty-medium{
+    font-size: 1.9rem;
+}
+
+
+.beautiful .book .beauty-button button{
+    padding: 15px 50px;
+    font-size: 14px;
+}
+
+    
+
+.foundation .lower{
+    width: 100%;
+    height: 650px;
+}
+
+.foundation .lower .point5{
+    width: 40%;
+}
+
+.foundation .lowest{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .bottom{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding: 2rem;
+    }
+    
+    }
+
+
+@media (min-width:600px) and (max-width:768px){
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2100px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd';
+        width: 95%;
+        height: 1900px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+}
+
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 2.3rem;
+        height: 150px;
+    }
+    
+    header .nav .weblogo{
+        align-content: center;
+        width: 80%;
+    }
+    
+    header .nav .hyperlinks{
+        width: 100%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .section3{
+        font-size: 6rem;
+        font-weight: bold;
+        margin: 23px;
+        letter-spacing: 2px;
+    }
+
+    .midway{
+        height: 1200px;
+    }
+
+    .midway .mid{
+        width: 95%;
+        height: 900px;
+        grid-template-columns:  repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+        'a b'
+        'c d'
+        'e f';
+    }
+
+    .midway .text{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(37, 45, 65);
+    }
+
+    .midway .text .text-large{
+        font-size: 45px;
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    .mountain .mount .rock3{
+        width: 95%;
+    }
+
+    .company{
+        height: 1800px;
+        justify-content: center;
+    }
+
+    .company .kompany1{
+        width: 98%;
+        justify-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 450px);
+        grid-template-areas:
+        'a'
+        'b';
+        height: 1200px;
+    }
+
+    .company .kompany1 .image{
+        background-size: cover;
+        width: 90%;
+    }
+
+    .company .kompany1 .fix{
+        padding: 0;
+        width: 95%;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 0px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+        'd'
+        'e'
+        'f';
+        height: 800px;
+    }
+
+    .company .kompany2{
+        width: 80%;
+    }
+
+    .company .kompany3 .rating{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company .kompany3 .sentence{
+        width: 80%;
+    }
+
+    .couple{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 550px;
+        padding: 40px 50px;
+        margin-bottom: 30px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .couple .comment-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .couple .comment-text{
+        width: 90%;
+        font-size: 26px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        line-height: 45px;
+        text-align: center;
+    }
+    
+    .couple .comment-name{
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(255, 103, 128);
+        text-align: center;
+    }
+
+     
+.beautiful{
+    width: 100%;
+    height: 900px;
+}
+
+.beautiful .book{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.beautiful .book .beauty-small{
+    font-size: 18px;
+}
+
+.beautiful .book .beauty-large{
+    font-size: 6rem;
+}
+
+.beautiful .book .beauty-medium{
+    font-size: 1.5rem;
+}
+
+
+.beautiful .book .beauty-button button{
+    padding: 15px 50px;
+    font-size: 14px;
+}
+
+
+    .foundation .lower{
+        width: 100%;
+        height: 600px;
+    }
+
+    .foundation .lower .point5{
+        width: 50%;
+    }
+    
+    
+    
+    .foundation .lowest{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .bottom{
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        padding: 2rem;
+    }
+    
+    }
+
+
+@media (min-width:425px) and (max-width:600px) {
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2100px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd';
+        width: 95%;
+        height: 1900px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+}
+
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 1.5rem;
+        height: 150px;
+    }
+    
+    header .nav .weblogo img{
+        align-content: center;
+        width: 75%;
+    }
+    
+    header .nav .hyperlinks{
+        width: 100%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .nav .hyperlinks ul li a{
+        font-size: 13px;
+    }
+
+    header .section3{
+        font-size: 5rem;
+        font-weight: bold;
+        margin: 23px;
+        letter-spacing: 1.5px;
+    }
+
+    header .section4{
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    
+    .midway{
+        height: 2400px;
+    }
+
+    .midway .mid{
+        width: 90%;
+        height: 2000px;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+    }
+
+    .midway .text{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(37, 45, 65);
+    }
+
+    .midway .text .text-small{
+        font-size: 18px;
+    }
+    
+    .midway .text .text-large{
+        font-size: 42px;
+        font-weight: 600;
+        margin: 15px 0px 45px 0px;
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    .mountain .mount .rock3{
+        width: 95%;
+    }
+    
+    .company{
+        height: 1800px;
+        justify-content: center;
+    }
+
+    .company .kompany1{
+        width: 98%;
+        justify-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 450px);
+        grid-template-areas:
+        'a'
+        'b';
+        height: 1200px;
+    }
+
+    .company .kompany1 .image{
+        background-size: cover;
+        width: 90%;
+    }
+
+    .company .kompany1 .fix{
+        padding: 0;
+        width: 92%;
+    }
+
+    .company .kompany1 .fix .text-large{
+        font-size: 2.5rem;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 0px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+        'd'
+        'e'
+        'f';
+        height: 800px;
+    }
+
+    .company .kompany2{
+        width: 80%;
+    }
+
+    .company .kompany3 .rating{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company .kompany3 .sentence{
+        width: 80%;
+    }
+
+    .couple{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 550px;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .couple .comment-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .couple .comment-text{
+        width: 100%;
+        font-size: 23px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        line-height: 38px;
+        text-align: center;
+    }
+    
+    .couple .comment-name{
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(255, 103, 128);
+        text-align: center;
+    }
+
+    .beautiful{
+        width: 100%;
+        height: 900px;
+    }
+    
+    .beautiful .book{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .beautiful .book .beauty-small{
+        font-size: 18px;
+    }
+    
+    .beautiful .book .beauty-large{
+        font-size: 5rem;
+    }
+    
+    .beautiful .book .beauty-medium{
+        font-size: 1.5rem;
+    }
+    
+    
+    .beautiful .book .beauty-button button{
+        padding: 15px 50px;
+        font-size: 14px;
+    }
+
+    .foundation .lower{
+        width: 100%;
+        height: 550px;
+    }
+
+    .foundation .lower .point5{
+        width: 60%;
+    }
+    
+    
+    .foundation .lowest{
+        width: 100%;
+    }
+
+    footer{
+        display: flex;
+        align-items: center;
+    }
+    
+    footer .bottom{
+        width: 70%;
+        height: 150px;
+        display: flex;
+        justify-content: space-evenly;
+        align-self: center;
+        padding: 2rem;
+    }
+    
+    }
+
+
+@media (min-width:300px) and (max-width: 425px){
+
+    .lucky{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2100px;
+        background-color: rgb(246, 246, 246);
+        margin-bottom: 30px;
+    }
+    
+    .lucky .luck{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 500px);
+        grid-template-areas: 
+        'a'
+        'b'
+        'c'
+        'd';
+        width: 95%;
+        height: 1900px;
+        color: rgb(37, 45, 65);
+    }
+
+    
+.lucky .luck .up4{
+    grid-area: d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+}
+
+
+.lucky .luck .up4 .down1{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.lucky .luck .up4 .down2{
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 85%;
+}
+
+.lucky .luck .up4 .down3{
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'Montserrat';
+}
+
+.lucky .luck .up4 .down4 button{
+    background: none;
+    padding: 15px 45px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    border: 2px solid rgb(255, 103, 128);    
+    color: rgb(37, 45, 65);
+}
+
+    header .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 0.5rem;
+        height: 140px;
+    }
+    
+    header .nav .weblogo img{
+        align-content: center;
+        width: 60%;
+    }
+    
+    header .nav .hyperlinks{
+        width: 100%;
+        align-content: center;
+    }
+    
+    header .nav .hyperlinks ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .nav .hyperlinks ul li a{
+        font-size: 10px;
+    }
+
+    header .section3{
+        font-size: 3.7rem;
+        font-weight: bold;
+        margin: 22px;
+        letter-spacing: 1.2px;
+    }
+
+    .midway{
+        height: 2400px;
+    }
+
+    .midway .mid{
+        width: 90%;
+        height: 2000px;
+        grid-template-columns:  1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas:
+        'a'
+        'b'
+        'c'
+        'd'
+        'e'
+        'f';
+    }
+
+    .midway .text{
+        width: 95%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: rgb(37, 45, 65);
+    }
+
+    .midway .text .text-small{
+        font-size: 15px;
+    }
+    
+    .midway .text .text-large{
+        font-size: 40px;
+        font-weight: 600;
+        margin: 15px 0px 45px 0px;
+    }
+
+    .mountain{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        background-image:  url("images/hero.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    
+    .mountain .mount{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 98%;
+        height: 400px;
+        justify-content: center;
+        color: white;
+    }
+
+    .mountain .mount .rock3{
+        width: 95%;
+    }
+
+    .mountain .mount .rock5{
+        width: 95%;
+    }
+
+    .company{
+        height: 1800px;
+        justify-content: center;
+    }
+
+    .company .kompany1{
+        width: 98%;
+        justify-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 500px);
+        grid-template-areas:
+        'a'
+        'b';
+        height: 1200px;
+    }
+
+    .company .kompany1 .image{
+        background-size: cover;
+        width: 90%;
+    }
+
+    .company .kompany1 .fix{
+        padding: 0;
+        width: 92%;
+    }
+
+    .company .kompany1 .fix .text-large{
+        font-size: 2.2rem;
+    }
+
+    .company .kompany1 .fix .text-text{
+        font-size: 13px;
+    }
+
+    .company .kompany3{
+        display: grid;
+        gap: 0px;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 200px);
+        grid-template-areas:
+        'd'
+        'e'
+        'f';
+        height: 800px;
+    }
+
+    .company .kompany2{
+        width: 80%;
+    }
+
+    .company .kompany3 .rating{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company .kompany3 .sentence{
+        width: 80%;
+    }
+
+    .couple{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 550px;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        background-color: rgb(246, 246, 246);
+    }
+    
+    .couple .comment-image{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .couple .comment-text{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .couple .comment-name{
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(255, 103, 128);
+        text-align: center;
+    }
+
+    .beautiful{
+        width: 100%;
+        height: 900px;
+    }
+    
+    .beautiful .book{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .beautiful .book .beauty-small{
+        font-size: 18px;
+    }
+    
+    .beautiful .book .beauty-large{
+        font-size: 4.5rem;
+    }
+    
+    .beautiful .book .beauty-medium{
+        font-size: 1.2rem;
+    }
+    
+    
+    .beautiful .book .beauty-button button{
+        padding: 15px 45px;
+        font-size: 13px;
+    }
+
+    .foundation .lower{
+        width: 100%;
+        height: 450px;
+    }
+
+    .foundation .lower .point5{
+        width: 95%;
+    }
+    
+    
+    .foundation .lowest{
+        width: 100%;
+    }
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+footer .bottom{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    padding: 1.5rem;
+}
+
+}
